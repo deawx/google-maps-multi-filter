@@ -76,15 +76,21 @@ jQuery(document).ready(function ($) {
     function addMarker(markerinfo) {
         // titulo do marcador
         var title = markerinfo.name;
-        if (title === null) { title = ''; }
+        if (title === null) {
+            title = '';
+        }
 
         // endereco completo do marcador, deixa em branco se não há
         var address = markerinfo.location.full_address;
-        if (address === null) { address = ''; }
+        if (address === null) {
+            address = '';
+        }
 
         // telefone do marcador, deixar em branco se não há
         var phone = markerinfo.phone;
-        if (phone === null) { phone = ''; }
+        if (phone === null) {
+            phone = '';
+        }
 
         // pais do marcador
         var country = markerinfo.location.country.slug;
@@ -174,7 +180,7 @@ jQuery(document).ready(function ($) {
     /**
      * Form filtro
      */
-    $('#buscar-locais').submit(function(event) {
+    $('#buscar-locais').submit(function (event) {
         event.preventDefault();
 
         // valores filtros selecionado
