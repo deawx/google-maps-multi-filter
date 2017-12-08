@@ -47,7 +47,7 @@ gulp.task('server', ['sass'], function () {
 
     // browser sync configs
     browserSync.init({
-        proxy: 'http://localhost/googlemaps/',
+        proxy: 'http://googlemaps.dev',
         notify: false,
         open: false,
     });
